@@ -12,8 +12,8 @@ class ActionTweepy(Action):
 		return 'action_tweepy'	
 	def run(self, dispatcher, tracker, domain):
 		u,t,c=[],[],[]
-		auth = tweepy.OAuthHandler('GTOFwH0XyYEnJcFK7aymzwXUD','yJBqo2YuEGL9amrlluJqUVjs4xgvktnX3ct54GODDsp3gTQvos')
-		auth.set_access_token('1195378945828376577-ztJDNTFENMNZo37xq5S9oOax4xOs4W','rJvIgEJHeCoNlLV4uNw852dM3EQAztl503BuJ6ocorImV')
+		auth = tweepy.OAuthHandler('key','key')
+		auth.set_access_token('key','key')
 		api = tweepy.API(auth)
 		for tweet in tweepy.Cursor(api.search, q='#datascience',lang="en").items(10):
 			u.append(tweet.user.name)
