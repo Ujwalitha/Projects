@@ -1,0 +1,16 @@
+intents:
+- greet
+- goodbye
+- inform
+- ask_trending
+
+templates:
+  utter_greet:
+  - text: Hello! How can I help?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+actions:
+- utter_greet
+- utter_goodbye
+- action_tweepy
